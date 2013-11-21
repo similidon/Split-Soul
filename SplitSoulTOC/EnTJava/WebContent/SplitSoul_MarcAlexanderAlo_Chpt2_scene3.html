@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Split Soul</title>
+<style type="text/css">
+#anicanvas{
+border-width: 3px;
+border-style: outset;
+}
+img{display: none;}
+</style>
+<script type="text/javascript">
+var vc, vctx, vi1, vi2,vi3;
+function init(){
+//alert("init()");
+vc = document.getElementById("anicanvas");
+vctx = vc.getContext("2d");
+vi1= document.getElementById("desert");
+
+vi2= document.getElementById("daf");
+
+vi3= document.getElementById("daf1");
+vi4= document.getElementById("daf2");
+
+
+setInterval("animation()",1500);
+}
+var dax =0; counter=0; sizew=400; sizeh=400;
+function animation(){
+if(counter >=2) counter =0;else counter ++;
+
+if(sizew >500||sizeh > 500){sizew=400;sizeh=400;}
+dax = 335*counter;
+
+vctx.drawImage(vi1,0,0,1300,600);
+vctx.drawImage(vi3,15,375,500,200);
+vctx.drawImage(vi4,800,15,500,200);
+vctx.drawImage(vi2,dax,0,335,280,450,200,sizew,sizeh);
+}
+</script>
+</head>
+<body style="background-color:gray;"></body>
+<body onload = "init()">
+<h2>Split Soul(Danganronpa Fanfic)</h2>
+<h3>Chapter 2</h3>
+<h4>Scene 3</h4>
+<p>As the teacher enters the room leon was thinking to himself</p>
+<canvas id = "anicanvas" width="1300" height="600">Browser does not support html5</canvas>
+<img id="desert" alt=""src="Room.png" width="600" height="400"><br>
+<img id="daf" alt=""src="leon2.png">
+<img id="daf1" alt=""src="room_cnv3.png">
+<img id="daf2" alt=""src="room_cnv4.png">
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene1.html"><button type="submit">1</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene2.html"><button type="submit">2</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene3.html"><button type="submit">3</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene4.html"><button type="submit">4</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene5.html"><button type="submit">5</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene6.html"><button type="submit">6</button></a> 
+<a href="SplitSoul_JackyChan_Chpt2_scene7.html"><button type="submit">7</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene8.html"><button type="submit">8</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene9.html"><button type="submit">9</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt3_scene1.html"><button type="submit">Next Chapter</button></a>
+<a href="SplitSoul_MarcAlexanderAlo_Title.html"><button type="submit">Title screen</button></a>  
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Split-Soul Title Screen</title>
+<style type="text/css">
+#anicanvas{
+border-width: 3px;
+border-style: outset;
+}
+img{display: none;}
+
+.container {
+	width: 400x;
+	height: 600px;
+    margin: 0 auto;
+    background-color: gray;
+}
+
+</style>
+
+<script type="text/javascript">
+var vc, vctx, vi1, vi2,vi3;
+function init(){
+//alert("init()");
+vc = document.getElementById("anicanvas");
+vctx = vc.getContext("2d");
+vi1= document.getElementById("desert");
+
+
+
+
+setInterval("animation()",1500);
+}
+var dax =0; counter=0; sizew=400; sizeh=400;
+function animation(){
+if(counter >=2) counter =0;else counter ++;
+
+if(sizew >500||sizeh > 500){sizew=400;sizeh=400;}
+
+
+vctx.drawImage(vi1,0,0,400,600);
+
+}
+</script>
+</head>
+<div class="container">
+<body style="background-color:gray;"></body>
+<body  onload = "init()" >
+
+<h2>Split Soul(Danganronpa Fanfic)</h2>
+<h3>Title Screen</h3>
+
+<canvas id = "anicanvas" width="400" height="600">Browser does not support html5</canvas>
+<img id="desert" alt=""src="Split_Soul.png" width="600" height="400"><br>
+<a href="SplitSoul_MarcAlexanderAlo_Chpt1_scene1.html"><button type="submit">Chpt.1</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene1.html"><button type="submit">Chpt.2</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt3_scene1.html"><button type="submit">Chpt.3</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt4_scene1.html"><button type="submit">Chpt.4</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt5_scene1.html"><button type="submit">Chpt.5</button></a> 
+<audio autoplay="autoplay" controls="controls">
+  <source src="Mirror_Mirror.ogg" type="audio/ogg"></source>
+  
+
+</audio>
+
+</body>
+</div>
+</html>

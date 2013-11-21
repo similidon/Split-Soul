@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Split Soul</title>
+<style type="text/css">
+#anicanvas{
+border-width: 3px;
+border-style: outset;
+}
+img{display: none;}
+</style>
+<script type="text/javascript">
+var vc, vctx, vi1, vi2,vi3;
+function init(){
+//alert("init()");
+vc = document.getElementById("anicanvas");
+vctx = vc.getContext("2d");
+vi1= document.getElementById("desert");
+vi2= document.getElementById("daf");
+vi3= document.getElementById("daf1");
+vi4= document.getElementById("daf2");
+vi5= document.getElementById("daf3");
+vi6= document.getElementById("daf4");
+vi7= document.getElementById("daf5");
+vi8= document.getElementById("daf6");
+vi9= document.getElementById("daf7");
+
+
+
+setInterval("animation()",1500);
+setInterval("animation2()",1500);
+}
+var dax =0; counter=0; sizew=400; sizeh=400;
+function animation(){
+if(counter >=2) counter =0;else counter ++;
+
+if(sizew >500||sizeh > 500){sizew=400;sizeh=400;}
+dax = 310*counter;
+
+vctx.drawImage(vi1,0,0,1300,600);
+vctx.drawImage(vi3,600,50,300,100);
+vctx.drawImage(vi4,dax,0,310,280,975,200,sizew,sizeh);
+}
+function animation2(){
+	if(counter >=2) counter =0;else counter ++;
+
+	if(sizew >500||sizeh > 500){sizew=400;sizeh=400;}
+	dax = 277*counter;
+
+	vctx.drawImage(vi6,600,180,300,100);
+	vctx.drawImage(vi7,350,200,300,100);
+	vctx.drawImage(vi8,600,300,300,100);
+	vctx.drawImage(vi9,350,325,300,100);
+	
+	
+	vctx.drawImage(vi5,350,90,300,100);
+	vctx.drawImage(vi2,dax,0,277,280,0,200,sizew,sizeh);
+	}
+</script>
+</head>
+<body style="background-color:gray;"></body>
+<body onload = "init()">
+<h2>Split Soul</h2>
+<h3>Chapter 2 (Danganronpa Fanfic)</h3>
+<h4>Scene 8</h4>
+<canvas id = "anicanvas" width="1300" height="600">Browser does not support html5</canvas>
+<img id="desert" alt=""src="Hall.png" width="600" height="400"><br>
+<img id="daf" alt=""src="leon3.png">
+<img id="daf1" alt=""src="rep_cnv1.png">
+<img id="daf2" alt=""src="kiraLight1.png">
+<img id="daf3" alt=""src="rep_cnv2.png">
+<img id="daf4" alt=""src="rep_cnv3.png">
+<img id="daf5" alt=""src="rep_cnv4.png">
+<img id="daf6" alt=""src="rep_cnv5.png">
+<img id="daf7" alt=""src="rep_cnv6.png">
+
+
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene1.html"><button type="submit">1</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene2.html"><button type="submit">2</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene3.html"><button type="submit">3</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene4.html"><button type="submit">4</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene5.html"><button type="submit">5</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene6.html"><button type="submit">6</button></a> 
+<a href="SplitSoul_JackyChan_Chpt2_scene7.html"><button type="submit">7</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene8.html"><button type="submit">8</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt2_scene9.html"><button type="submit">9</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt3_scene1.html"><button type="submit">Next Chapter</button></a>
+<a href="SplitSoul_MarcAlexanderAlo_Title.html"><button type="submit">Title screen</button></a>  
+</body>
+</html>

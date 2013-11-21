@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Split Soul</title>
+<style type="text/css">
+#anicanvas{
+border-width: 3px;
+border-style: outset;
+}
+img{display: none;}
+</style>
+<script type="text/javascript">
+var vc, vctx, vi1, vi2,vi3;
+function init(){
+//alert("init()");
+vc = document.getElementById("anicanvas");
+vctx = vc.getContext("2d");
+vi1= document.getElementById("desert");
+vi2= document.getElementById("daf");
+vi3= document.getElementById("daf1");
+vi4= document.getElementById("daf2");
+vi5= document.getElementById("daf3");
+vi6= document.getElementById("daf4");
+vi7= document.getElementById("daf5");
+
+
+
+setInterval("animation()",1500);
+setInterval("animation2()",1500);
+}
+var dax =0; counter=0; sizew=400; sizeh=400;
+function animation(){
+if(counter >=2) counter =0;else counter ++;
+
+if(sizew >500||sizeh > 500){sizew=400;sizeh=400;}
+dax = 400*counter;
+
+vctx.drawImage(vi1,0,0,1300,600);
+vctx.drawImage(vi3,600,50,300,100);
+vctx.drawImage(vi4,dax,0,400,280,875,200,sizew,sizeh);
+}
+function animation2(){
+	if(counter >=2) counter =0;else counter ++;
+
+	if(sizew >500||sizeh > 500){sizew=400;sizeh=400;}
+	dax = 301*counter;
+
+	vctx.drawImage(vi6,600,180,300,100);
+	vctx.drawImage(vi5,350,90,300,100);
+	vctx.drawImage(vi7,350,275,300,100);
+	vctx.drawImage(vi2,dax,0,301,280,0,200,sizew,sizeh);
+	}
+</script>
+</head>
+<body style="background-color:gray;"></body>
+<body onload = "init()">
+<h2>Split Soul</h2>
+<h3>Chapter 5 (Danganronpa Fanfic)</h3>
+<h4>Scene 1</h4>
+<canvas id = "anicanvas" width="1300" height="600">Browser does not support html5</canvas>
+<img id="desert" alt=""src="Hall.png" width="600" height="400"><br>
+<img id="daf" alt=""src="Kaitoboo.png">
+<img id="daf1" alt=""src="stalk1.png">
+<img id="daf2" alt=""src="Sarah1.png">
+<img id="daf3" alt=""src="stalk2.png">
+<img id="daf4" alt=""src="stalk3.png">
+<img id="daf5" alt=""src="stalk4.png">
+
+
+<a href="SplitSoul_MarcAlexanderAlo_Chpt5_scene1.html"><button type="submit">1</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt5_scene2.html"><button type="submit">2</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt5_scene3.html"><button type="submit">3</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt5_scene4.html"><button type="submit">4</button></a> 
+
+<a href="SplitSoul_MarcAlexanderAlo_Title.html"><button type="submit">Title screen</button></a>  
+</body>
+</html>

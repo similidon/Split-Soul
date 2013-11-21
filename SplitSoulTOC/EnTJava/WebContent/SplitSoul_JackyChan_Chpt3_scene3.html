@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Split Soul</title>
+<style type="text/css">
+#anicanvas{
+border-width: 3px;
+border-style: outset;
+}
+img{display: none;}
+</style>
+
+<script type="text/javascript">
+var vc, vctx, vi1, vi2,vi3;
+function init(){
+//alert("init()");
+vc = document.getElementById("anicanvas");
+vctx = vc.getContext("2d");
+vi1= document.getElementById("desert");
+
+vi2= document.getElementById("daf");
+vi3= document.getElementById("daf1");
+vi4= document.getElementById("daf2");
+vi5= document.getElementById("daf3");
+
+
+
+setInterval("animation()",1500);
+
+}
+var dax =0; counter=0; sizew=400; sizeh=400;
+function animation(){
+if(counter >=2) counter =0;else counter ++;
+
+if(sizew >500||sizeh > 500){sizew=400;sizeh=400;}
+dax = 277*counter;
+
+vctx.drawImage(vi1,0,0,1300,600);
+vctx.drawImage(vi3,275,225,400,200);
+
+vctx.drawImage(vi2,dax,0,277,280,0,200,sizew,sizeh);
+}
+
+</script>
+</head>
+<body style="background-color:gray;"></body>
+<body  onload = "init()" >
+
+<h2>Split Soul(Danganronpa Fanfic)</h2>
+<h3>Chpt3 Scene3</h3>
+
+<canvas id = "anicanvas" width="1300" height="600">Browser does not support html5</canvas>
+<img id="desert" alt=""src="dorm2.png" width="600" height="400"><br>
+<img id ="daf" alt="" src="leon3.png">
+<img id ="daf1" alt="" src="Met3.png">
+
+<a href="SplitSoul_MarcAlexanderAlo_Chpt3_scene1.html"><button type="submit">1</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt3_scene2.html"><button type="submit">2</button></a> 
+<a href="SplitSoul_JackyChan_Chpt3_scene3.html"><button type="submit">3</button></a> 
+<a href="SplitSoul_JackyChan_Chpt3_scene4.html"><button type="submit">4</button></a> 
+<a href="SplitSoul_MarcAlexanderAlo_Chpt4_scene1.html"><button type="submit">Next Chapter</button></a>
+<a href="SplitSoul_MarcAlexanderAlo_Title.html"><button type="submit">Title screen</button></a> 
+
+
+</body>
+</html>
